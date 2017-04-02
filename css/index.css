@@ -4,7 +4,7 @@
     a{text-decoration: none;}
     body,input{font-family:'Microsoft YaHei';font-size: 0.14rem;}
     li{list-style: none;}
-
+    input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; } 
 
 /*  ---------
   登录*/
