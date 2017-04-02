@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>登陆</title>
+    <script type="text/javascript" src='./js/fontsize.js'></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+	
+</head>
+<body>
+
+        <form>
+            <div id="phonebox">
+                <img src="./images/imgphone.png" alt="" class='img_phone'><input type="text" placeholder="输入手机号" id="phoneNum">
+                <button id='huoqu_btn'>验证码</button>
+            </div>
+            <p id="tishi">(请输入正确手机号码)</p>
+            <div id="codebox">
+            	<img src="" alt="">
+                <img src="./images/img_yz.png" alt="" class='img_code'><input type='text' placeholder="请输入验证码" id="yzcode">
+            </div>
+            <button id="sub_btn" class='btn' >登&nbsp&nbsp&nbsp&nbsp录</button>
+        </form>
+
+    </div>
+	<footer id='footer_box'>
+		<img src="./images/logofoot.png" alt="" class='logofoot'>
+	</footer>
+
+
+
+
+    <script type="text/javascript" src='./js/zepto.min.js v1.2.0'></script>
+    <script type="text/javascript" src='./js/touch-0.2.14.min.js'></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+        
+        // 手机号码正则部分
+
+
+                $('#phoneNum').blur(function(){
+                   
+                    var phoneVal = $('#phoneNum').val();
+                    var reg=/^1[34578]\d{9}$/;
+
+                        if(reg.test(phoneVal)){
+                            $("#tishi").css('visibility','hidden')
+                             return true;
+                        } else{
+                            $("#tishi").css('visibility','visible')
+                            return false;
+                        }
+                        
+                });
+
+      
+
+        })
+    </script>
+    <script type="text/javascript" src='./js/index.js'></script>
+ </body>   
+        
+</body>
+</html>

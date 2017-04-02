@@ -1,0 +1,267 @@
+  @charset 'utf-8'; 
+  *{margin:0;padding:0;box-sizing: border-box;}
+
+    a{text-decoration: none;}
+    body,input{font-family:'Microsoft YaHei';font-size: 0.14rem;}
+    li{list-style: none;}
+/*  ---------
+  登录*/
+    #phonebox{
+      margin-left:0.3rem;
+      margin-right:0.3rem;
+        margin-top: 1.05rem;
+        border-bottom: 1px solid #ccc;
+        }
+
+     #phoneNum{
+         border:none;
+         margin-left:0.13rem;
+         font-size: 0.36rem;
+         margin-bottom: 0.3rem;
+         float-right;
+        
+         
+        }
+    .img_phone{
+      margin-left: 0.6rem;
+      width: 0.32rem;
+      height: 0.4rem;
+
+    }
+    #huoqu_btn{
+      width: 1.2rem;
+      height: 0.7rem;
+      background-color: #f44236;
+      color:#fff;
+      border:none;
+      border-radius: 0.06rem;
+      float:right;
+    }
+    .visibility_hidden{
+      visibility:hidden;
+    }
+    .visibility_visible{
+      visibility:visible;
+    }
+    #tishi{
+      text-indent:65px;
+      color:red;
+      font-size: 0.22rem;
+      visibility:hidden;
+    }
+    #codebox{
+      margin-left:0.3rem;
+      margin-right:0.3rem;
+      margin-top: 0.3rem;
+      border-bottom: 1px solid #ccc;
+        }
+     .img_code{
+      margin-left: 0.56rem;
+      width: 0.4rem;
+      height: 0.32rem;  
+     }
+    #yzcode{
+     border:none;
+     margin-left:0.13rem;
+    font-size: 18px;
+    margin-bottom: 2.3vh;
+    float-right;
+    }
+
+    .btn{
+    width:6.6rem;
+    height: 0.9rem;
+    color:#fff;
+    background-color: #f44236;
+    font-size: 0.36rem;
+    border:none;
+    margin-top: 10.9vh;
+    margin-left:4vw;
+    border-radius: 0.06rem;
+    }
+
+  body{
+    background-color: #f2f6f7;
+  }
+  input[type="text"]{
+    background-color: #f2f6f7;
+  }
+  .logofoot{
+    width: 2.18rem;
+    height: 1.64rem;
+    bottom:0.25rem;
+    margin-top: 5.2rem;
+    margin-left:2.5rem;
+  }
+  /*------------------*/
+/*  积分流水储值*/
+  .year_{
+      font-size: 0.36rem;
+      color:red;
+    }
+    .jifen_yearbox{
+       margin:0 0.1rem 0 0.1rem;
+       margin-top: 0.2rem;
+    }
+    .listyle{
+      width: 7rem;
+      height: 1.1rem;
+      border :1px solid #ccc;
+      border-radius: 0.06rem;
+      font-size: 0.3rem;
+      margin-top: 0.2rem;
+      background-color: #fff;
+      line-height: 1.1rem;
+      text-indent: 0.2rem;
+      color:#999999;
+    }
+    .addjifen{
+      color:red;
+    }
+    .addjifen,._jifen{
+      
+      font-size: 0.4rem;
+      float:right;
+
+    }
+    .add_word,.word_{
+      font-size: 0.24rem;
+      margin-right: 0.2rem;
+    }
+    ._jifen{
+      color:black;
+    }
+   /* ------*/
+   /*   积分换乐圆*/
+
+    .zhuanru_btn{
+      margin-top: 1.9rem;
+    }
+    .text_jl{
+      font-size: 0.3rem;
+      color:#fff;
+      text-align: center;
+    }
+    .gundong_jifen{
+
+      font-size: 1.2rem;
+      color:#fff;
+      
+      text-align: center;
+
+    }
+    .firs_test{
+      padding-top:0.8rem;
+    }
+    .sce_test{
+      padding-top: 0.4px;
+    }
+    .th_test{
+      padding:0.8rem 0 0.4rem 0;
+    }
+/* -----兑换成功*/
+    
+      .go_denglu{
+          margin-top: 1rem;
+      }
+/*-----兑换失败*/
+  
+      .res_jifen{
+        font-size: 0.26rem;
+        color:#fff;
+        padding-top: 3rem;
+        text-align: center;
+      }
+/*-------红包*/
+    .hb_same{
+      color:#fae3b1;
+      text-align: center;
+    }
+    .my_w{
+      font-size: 0.72rem;
+      padding-top: 0.2rem;
+    }
+    .text_hb{
+      font-size: 0.3rem;
+
+    }
+        .samehb,.hb_num,.hb_dh,.hb_sy{
+      color:#fae3b1;
+      text-align: center;
+      font-size: 0.22rem;
+    }
+    .hb_num{
+      font-size: 0.48rem;
+
+    }
+    .samehb{
+      font-size: 0.24rem;
+      padding-top: 2rem;
+    }
+    .hb_sy{
+      padding-top:0.35rem;
+    }
+/*红包弹出页面*/
+    .tan_dhtext,.tan_yuan,.tan_xiaohao{
+      text-align: center;
+    }
+    .tan_dhtext{
+      color:#fff;
+      font-size: 0.36rem;
+      margin-top: 3.3rem;
+    }
+    .tan_num,.tan_yuan,.tan_xiaohao{
+      color:#fae3b1;
+    }
+    .tan_num{
+      font-size: 0.72rem; 
+    }
+    .tan_yuan{
+      font-size: 0.3rem;
+      margin-top: 0.5rem;
+    }
+    .tan_xiaohao{
+      font-size: 0.26rem;
+      margin-top: 0.5rem;
+    }
+    .if_btn{
+      font-size: 0.36rem;
+      color:#fff;
+      text-align: center;
+      background-color: #ed725c;
+      border:none;
+      width: 2.6rem;
+      height: 0.8rem;
+      border-radius: 0.06rem;
+      margin-left: 1.7rem;
+      
+    }
+    .if_btn_ture{
+      margin-top: 0.5rem;
+      
+    }
+
+    .tan_hb_f_text{
+    font-size: 0.36rem;
+    margin-top: 3.8rem;
+    color:#fff;
+  }
+  .if_btn_false{
+    margin-top: 2rem;
+  }
+
+    /*遮罩部分*/
+    .zhezhao{
+      position:absolute; 
+      left:0; 
+      top:0; 
+      width: 7.2rem;
+      height: 12.8rem;
+      background-color: #ccc; 
+      opacity: 0.6;
+      z-index: 100;
+      display: block; 
+    }
+
+    /**/
+    
