@@ -34,9 +34,10 @@
       height: 0.7rem;
       background-color: #f44236;
       color:#fff;
-      border:none;
       border-radius: 0.06rem;
       float:right;
+      border:none;
+      text-align: center;
     }
     .visibility_hidden{
       visibility:hidden;
