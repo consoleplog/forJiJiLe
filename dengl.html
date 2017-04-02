@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title>登陆</title>
 
-    <script type="text/javascript" src='./js/fontsize.js'></script>
+    
     <!-- <link rel="stylesheet" type="text/css" href="./css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
 
@@ -33,13 +33,19 @@
 
 
 
-
+    
     <script type="text/javascript" src='./js/zepto.min.js v1.2.0'></script>
     <script type="text/javascript" src='./js/touch-0.2.14.min.js'></script>
-
+    <script type="text/javascript" src='./js/fontsize.js'></script>
     <script type="text/javascript">
         $(document).ready(function(){
         
+            document.addEventListener("WeixinJSBridgeReady",function(){
+                    WeixinJSBridge.call("showToolbar")
+            });
+
+
+
         // 手机号码正则部分
 
 
