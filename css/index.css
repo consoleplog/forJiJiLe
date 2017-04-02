@@ -25,7 +25,8 @@
     .img_phone{
       margin-left: 0.6rem;
       width: 0.32rem;
-      height: 0.4rem;
+      height: 0.45rem;
+      vertical-align: text-bottom;
 
     }
     #huoqu_btn{
@@ -63,7 +64,7 @@
     #yzcode{
      border:none;
      margin-left:0.13rem;
-    font-size: 18px;
+    font-size: 0.36rem;
     margin-bottom: 2.3vh;
     float-right;
     }
@@ -89,7 +90,7 @@
   .logofoot{
     width: 2.18rem;
     height: 1.64rem;
-    margin-top: 3.2rem;
+    margin-top: 4.2rem;
     margin-left:2.5rem;
   }
   /*------------------*/
@@ -145,7 +146,6 @@
 
       font-size: 1.2rem;
       color:#fff;
-      
       text-align: center;
 
     }
