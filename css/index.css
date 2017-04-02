@@ -5,12 +5,13 @@
     body,input{font-family:'Microsoft YaHei';font-size: 0.14rem;}
     li{list-style: none;}
 
-    
+    /*兼容微信内核 按钮样式*/
     input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; } 
 
 /*  ---------
   登录*/
     #phonebox{
+      position: relative;
       margin-left:0.3rem;
       margin-right:0.3rem;
       margin-top: 1.05rem;
@@ -24,8 +25,8 @@
          margin-bottom: 0.3rem;
          float-right;
         
-         
         }
+         
     .img_phone{
       margin-left: 0.6rem;
       width: 0.32rem;
@@ -34,15 +35,17 @@
 
     }
     #huoqu_btn{
+      position: absolute;
+      top:-0.1rem;
+      right:0;
       width: 1.2rem;
       height: 0.7rem;
       background-color: #f44236;
       color:#fff;
       border-radius: 0.06rem;
-      float:right;
       border:none;
       text-align: center;
-      font-size: 0.32rem;
+      font-size: 0.26rem;
     }
     .visibility_hidden{
       visibility:hidden;
