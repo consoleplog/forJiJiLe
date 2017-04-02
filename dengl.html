@@ -55,11 +55,31 @@
                         
                 });
 
-      
+       // 验证码倒计时
 
-        })
+            $('#huoqu_btn').click(function(){
+                var time = 60 ;
+                var  h = setInterval(function(){
+                    if(time<10){
+                        time = "0"+time;
+                    }
+                        $('#huoqu_btn').val(time+"s");
+                        $('#huoqu_btn').css('background-color','#ccc');
+                        time--;
+
+                    if(time<0){
+                        clearInterval(h);
+                        $('#huoqu_btn').val('验证码');
+                        $('#huoqu_btn').css('background-color','#f44236');
+                    }
+                },1000)
+            })
+
+
+
+        })    
     </script>
-    <script type="text/javascript" src='./js/index.js'></script>
+    
  </body>   
         
 </body>
