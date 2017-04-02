@@ -4,6 +4,8 @@
     a{text-decoration: none;}
     body,input{font-family:'Microsoft YaHei';font-size: 0.14rem;}
     li{list-style: none;}
+
+    
     input[type=button], input[type=submit], input[type=file], button { cursor: pointer; -webkit-appearance: none; } 
 
 /*  ---------
@@ -11,8 +13,8 @@
     #phonebox{
       margin-left:0.3rem;
       margin-right:0.3rem;
-        margin-top: 1.05rem;
-        border-bottom: 1px solid #ccc;
+      margin-top: 1.05rem;
+      border-bottom: 1px solid #ccc;
         }
 
      #phoneNum{
@@ -40,6 +42,7 @@
       float:right;
       border:none;
       text-align: center;
+      font-size: 0.32rem;
     }
     .visibility_hidden{
       visibility:hidden;
