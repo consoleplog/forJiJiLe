@@ -4,6 +4,16 @@
     a{text-decoration: none;}
     body,input{font-family:'Microsoft YaHei';font-size: 0.14rem;}
     li{list-style: none;}
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
 /*  ---------
   登录*/
     #phonebox{
