@@ -68,12 +68,12 @@
                         sTime= "0"+time;
                     }
                         $('#huoqu_btn').text(sTime+"s");
-                        $('#huoqu_btn').css('background-color','#ccc');
+                        $('#huoqu_btn').css('color','#ccc');
                         time--;
                     if(time<0){
                         clearInterval(h);
                         $('#huoqu_btn').text('验证码');
-                        $('#huoqu_btn').css('background-color','#f44236');
+                        $('#huoqu_btn').css('color','#fff');
                     }
                 },1000)
             })
