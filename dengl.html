@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
     <title>登陆</title>
+
     <script type="text/javascript" src='./js/fontsize.js'></script>
+    <!-- <link rel="stylesheet" type="text/css" href="./css/reset.css"> -->
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+
 	
 </head>
 <body>
@@ -59,17 +62,17 @@
 
             $('#huoqu_btn').click(function(){
                 var time = 60 ;
-                var  h = setInterval(function(){
+                var sTime = 0;
+                var  h = setInterval(function(){       
                     if(time<10){
-                        time = "0"+time;
+                        sTime= "0"+time;
                     }
-                        $('#huoqu_btn').val(time+"s");
+                        $('#huoqu_btn').text(sTime+"s");
                         $('#huoqu_btn').css('background-color','#ccc');
                         time--;
-
                     if(time<0){
                         clearInterval(h);
-                        $('#huoqu_btn').val('验证码');
+                        $('#huoqu_btn').text('验证码');
                         $('#huoqu_btn').css('background-color','#f44236');
                     }
                 },1000)
