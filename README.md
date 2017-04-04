@@ -10,3 +10,4 @@ code for jijile shang hu
 [积分换乐圆](https://consoleplog.github.io/forJiJiLe/jifenhuanleyuan.html)
 [积分](https://consoleplog.github.io/forJiJiLe/jifenliushui.html)
 [成功](https://consoleplog.github.io/forJiJiLe/ok.html)
+[积分储值](https://consoleplog.github.io/forJiJiLe/huiyuanjf.html)
