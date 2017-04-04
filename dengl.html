@@ -37,57 +37,7 @@
     <script type="text/javascript" src='./js/zepto.min.js v1.2.0'></script>
     <script type="text/javascript" src='./js/touch-0.2.14.min.js'></script>
     <script type="text/javascript" src='./js/fontsize.js'></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-        
-            document.addEventListener("WeixinJSBridgeReady",function(){
-                    WeixinJSBridge.call("showToolbar")
-            });
-
-
-
-        // 手机号码正则部分
-
-
-                $('#phoneNum').blur(function(){
-                   
-                    var phoneVal = $('#phoneNum').val();
-                    var reg=/^1[34578]\d{9}$/;
-
-                        if(reg.test(phoneVal)){
-                            $("#tishi").css('visibility','hidden')
-                             return true;
-                        } else{
-                            $("#tishi").css('visibility','visible')
-                            return false;
-                        }
-                        
-                });
-
-       // 验证码倒计时
-
-
-            var wait=60;  
-            function time(o) {  
-                if (wait == 0) {  
-                    o.removeAttribute("disabled"); 
-                    o.style.color='#fff';           
-                    o.value="验证码";  
-                     wait = 60;  
-                } else {  
-                    o.setAttribute("disabled", true);  
-                    o.style.color='#ccc';
-                    o.value= wait +"s";  
-                    wait--;  
-                    setTimeout(function() {  
-                    time(o)  }, 1000)  
-                }  
-            }
-
-            $('#huoqu_btn').click(function(){time(this)})
-
-        })    
-    </script>
+    <script type="text/javascript" src='./js/index.js'></script>
     
  </body>   
         

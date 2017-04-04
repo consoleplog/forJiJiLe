@@ -268,8 +268,146 @@
       background-color: #ccc; 
       opacity: 0.6;
       z-index: 100;
-      display: block; 
+      display: none; 
+    }
+      .tan_hb_f_text{
+      text-indent: 1rem;
+      position: relative;
+    }
+     .img_cry{
+      width: 0.46rem;
+      height: 0.4rem;
+      position: absolute;
+      top:0.03rem;
+      left: 0.5rem;
     }
 
     /**/
+    .hy_jf_top{
+      height: 1.76rem;
+      position: relative;
+    }
+    .hy_jf_tex{
+      padding-top: 0.3rem;
+    }
+    .hy_jf_tex ,.hy_jf_topPhoneNum,.hy_jfly_go{
+      
+      font-size: 0.26rem;
+    }
+    .hy_jf_tex,.hy_jf_topPhoneNum{
+      text-indent: 0.3rem;
+    }
+    .hy_jf_topNum{
+      font-size:0.6rem;
+    }
+    .hy_jf_topPhoneNum{
+      color:#ccc;
+    }
+    .hy_jfly_go{
+      position: absolute;
+      right:0.2rem;
+      top:0.7rem;
+      
+    }
+    .img_jflygo{
+      width: 0.26rem;
+      height: 0.26rem;
+      /*vertical-align: text-top;*/       
+    }
+    .hy_jifen,.hy_chuzhi{
+      width: 3.6rem;
+      height: 0.9rem;
+      border:1px solid #999999; 
+      float: left;
+    }
+    .hy_chuzhi{
+      border-left: none;
+    }
+    .hy_jifen{
+      background-color: #f44236;
+    }
+    .hy_jifen_in,.hy_chuzhi_in{
+
+      text-align: center;
+      line-height: 0.9rem;
+
+    }
+    .img_money,.img_card{
+
+      width: 0.43rem;
+      height: 0.43rem;
+      vertical-align: text-bottom;
+
+    }
+
+    .hy_jf_text,.hy_cz_text{
+      display: inline-block;
+      text-indent: 0.3rem;
+      font-size: 0.3rem;
+    }
+    .hy_jf_text{
+      color:#fff;
+    }
+    .hy_cz_text{
+      color:#999999;
+    }
+
+
+
+
+
+
+    .hy_jf_list{
+      display: block;
+    }
+    .hy_cz_list{
+      display: none;
+    }
+    .hy_jf_li,.hy_cz_li{      
+      width: 7rem;
+      height: 2.6rem;
+      border:1px solid #999999;
+      border-radius: 0.06rem;
+      margin:0.2rem 0.08rem 0 0.08rem;
+    }
+
+    .hy_jf_li_img,.hy_cz_li_img{
+      width: 1.98rem;
+      height: 1.98rem;
+      border:2px solid #ccc;
+      border-radius: 0.06rem;
+      float:left;
+      margin:0.3rem 0.1rem 0.3rem 0.3rem;
+    }
+    
+    .hy_jf_li_right,.hy_cz_li_right{
+      float:left;
+      width: 4.36rem;
+      height: 2.61rem;
+    }
+    .hy_jf_li_text,.hy_cz_li_text{
+      font-size: 0.26rem;
+      text-indent: 0.23rem;
+    }
+    .hy_jf_li_first,.hy_cz_li_first{
+      padding-top: 0.3rem;
+    }
+    .hy_jf_li_num{
+      font-size: 0.72rem;
+    }
+    .hy_cz_li_num{
+      font-size: 0.4rem;
+    }
+    .hy_jf_li_te,.hy_cz_li_te{
+      text-align:right;
+      line-height: 0.74rem;
+      width: 100%;
+      border-top:2px dashed #ccc;
+      color:#999999;
+    }
+    .hy_cz_li_sec{
+      padding-top: 0.4rem;
+      padding-bottom: 0.2rem;
+
+    }
     
