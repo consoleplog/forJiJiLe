@@ -307,11 +307,13 @@
       position: absolute;
       right:0.2rem;
       top:0.7rem;
+      color:#f44236;
       
     }
     .img_jflygo{
       width: 0.26rem;
       height: 0.26rem;
+
       /*vertical-align: text-top;*/       
     }
     .hy_jifen,.hy_chuzhi{
@@ -390,7 +392,7 @@
       text-indent: 0.23rem;
     }
     .hy_jf_li_first,.hy_cz_li_first{
-      padding-top: 0.3rem;
+      padding-top: 0.23rem;
     }
     .hy_jf_li_num{
       font-size: 0.72rem;
@@ -409,5 +411,8 @@
       padding-top: 0.4rem;
       padding-bottom: 0.2rem;
 
+    }
+    .hy_jf_li_tt{
+      padding-bottom: 0.2rem;
     }
     
