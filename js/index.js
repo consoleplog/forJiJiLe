@@ -92,14 +92,29 @@ $(document).ready(function(){
                 var phoneVal = $('#phoneNum').val();
                 var url ='https//www.1zhuowang.com'+'/api/loginSmsCode'+'?'+'mobile='+phoneVal
                 var args ={"time":new Date()};
-                $.get(url,args,function(data){
+                $.get(url,function(data){
                     var panduan = $(data).find('success').text();
-                    console.log(panduan)
+                    console.log(data);
+                    console.log(panduan);
                 })
             })
 
-
-
+//登录页面  登录按钮 
+            $('#sub_btn').click(function(){
+                var yzcode = $("#yzcode").val();
+                var phoneVal = $('#phoneNum').val();
+                var url ='https//www.1zhuowang.com'+'/api/loginSmsCode'+'?'+'mobile='+phoneVal+'&'+'smsCode='+yzcode;
+                var args ={"time":new Date()};
+                console.log(url)
+                $.get(url,args,function(data){
+                    var panduan = $(data).find('success').text();
+                    if(panduan=='true'){
+                        console.log('success')
+                    }else{
+                        console.log('wrong')
+                    }
+                })
+            })
 
 
 
