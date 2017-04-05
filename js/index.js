@@ -4,17 +4,18 @@ $(document).ready(function(){
         // 手机号码正则部分
 
 
-                $('#phoneNum').blur(function(){
+                $('#phoneNum').bind('change',function(){
                    
                     var phoneVal = $('#phoneNum').val();
                     var reg=/^1[34578]\d{9}$/;
 
-                        if(reg.test(phoneVal)){
-                            $("#tishi").css('visibility','hidden')
-                             return true;
+                        if(reg.test(phoneVal) && phoneVal.length!=0){
+                            $("#tishi").css('visibility','hidden');
+                            $('#huoqu_btn').removeAttr('disabled');
+                             
                         } else{
-                            $("#tishi").css('visibility','visible')
-                            return false;
+                            $("#tishi").css('visibility','visible');
+                            $('#huoqu_btn').attr('disabled',false);
                         }
                         
                 });
@@ -36,10 +37,10 @@ $(document).ready(function(){
                     wait--;  
                     setTimeout(function() {  
                     time(o)  }, 1000)  
-                }  
+                }
             }
 
-            $('#huoqu_btn').click(function(){time(this)})
+            $('#huoqu_btn').bind("click",function(){time(this)})
 
         //单选框以及动态样式
         $('#hy_jf_box').click(function(){
@@ -85,7 +86,17 @@ $(document).ready(function(){
 
             })
 
+//登录页面 点击获取验证码
 
+            $('#huoqu_btn').bind('click',function(){
+                var phoneVal = $('#phoneNum').val();
+                var url ='https//www.1zhuowang.com'+'/api/loginSmsCode'+'?'+'mobile='+phoneVal
+                var args ={"time":new Date()};
+                $.get(url,args,function(data){
+                    var panduan = $(data).find('success').text();
+                    console.log(panduan)
+                })
+            })
 
 
 
