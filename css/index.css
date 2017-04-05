@@ -79,6 +79,9 @@
     }
 
     .btn{
+    display: block;
+    text-align: center;
+    line-height: 0.9rem;
     width:6.6rem;
     height: 0.9rem;
     color:#fff;
@@ -233,6 +236,8 @@
       margin-top: 0.5rem;
     }
     .if_btn{
+      display:block;
+      line-height: 0.8rem;
       font-size: 0.36rem;
       color:#fff;
       text-align: center;
@@ -365,7 +370,8 @@
     .hy_cz_list{
       display: none;
     }
-    .hy_jf_li,.hy_cz_li{      
+    .hy_jf_li,.hy_cz_li{
+      display: block;      
       width: 7rem;
       height: 2.6rem;
       border:1px solid #999999;
@@ -390,6 +396,7 @@
     .hy_jf_li_text,.hy_cz_li_text{
       font-size: 0.26rem;
       text-indent: 0.23rem;
+      color:#000;
     }
     .hy_jf_li_first,.hy_cz_li_first{
       padding-top: 0.23rem;
@@ -415,4 +422,17 @@
     .hy_jf_li_tt{
       padding-bottom: 0.2rem;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
     

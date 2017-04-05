@@ -69,7 +69,7 @@ $(document).ready(function(){
 
             $('.hb_inner').click(function(){
                 $('.zhezhao').css('display','block')
-                var o=true;
+                var o=false;
                 if(o){
                     $('.tanchu_hongbao').css('display','block')
                     $('.tanchu_hongbao1').css('display','none')
@@ -90,7 +90,7 @@ $(document).ready(function(){
 
             $('#huoqu_btn').bind('click',function(){
                 var phoneVal = $('#phoneNum').val();
-                var url ='https//www.1zhuowang.com'+'/api/loginSmsCode'+'?'+'mobile='+phoneVal
+                var url ='https://www.1zhuowang.com'+'/api/loginSmsCode'+'?'+'mobile='+phoneVal
                 var args ={"time":new Date()};
                 $.get(url,function(data){
                     var panduan = $(data).find('success').text();
