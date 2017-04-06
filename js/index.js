@@ -88,16 +88,16 @@ $(document).ready(function(){
 
 //登录页面 点击获取验证码
 
-            $('#huoqu_btn').bind('click',function(){
-                var phoneVal = $('#phoneNum').val();
-                var url ='https://www.1zhuowang.com'+'/api/loginSmsCode'+'?'+'mobile='+phoneVal
-                var args ={"time":new Date()};
-                $.get(url,function(data){
-                    var panduan = $(data).find('success').text();
-                    console.log(data);
-                    console.log(panduan);
-                })
-            })
+            // $('#huoqu_btn').bind('click',function(){
+            //     var phoneVal = $('#phoneNum').val();
+            //     var url ='https://www.1zhuowang.com'+'/api/loginSmsCode'+'?'+'mobile='+phoneVal
+            //     var args ={"time":new Date()};
+            //     $.get(url,function(data){
+            //         var panduan = $(data).find('success').text();
+            //         console.log(data);
+            //         console.log(panduan);
+            //     })
+            // })
 
 //登录页面  登录按钮 
             $('#sub_btn').click(function(){
@@ -119,6 +119,45 @@ $(document).ready(function(){
 
 
 
+
+       $('#huoqu_btn').bind('click',function(){
+                var phoneVal = $('#phoneNum').val();
+                var url ='https://www.1zhuowang.com'+'/api/loginSmsCode'+'?'+'mobile='+phoneVal
+                var args ={"time":new Date()};
+                $.ajax({
+				    url: url,
+				    method: 'post',
+				    dataType: 'jsonp',
+				    success: function(data){
+
+				    	console.log(data)
+				    	// var pja=((Number(data.overall)+Number(data.environmental)+Number(data.service))/3).toFixed(1);
+				    	// for(i=0;i<parseInt(pja);i++){
+				    	// 	$("#share-star span").eq(i).addClass('active');
+				    	// }
+				    	// $("#share-title").text(data.title);
+				    	// $("#share-addr").text(data.street+data.address);
+				    	// $("#share-time").text(data.server_time);
+				    	// $("#server_tel").attr("href","tel:"+data.server_tel);
+				    	// $("#share-num").text(pja+'分');
+				    	
+				    	// var html = '';
+				    	// $.each(data.info_logo, function() {
+				    	// 	html +='<div class="swiper-slide"><img src="http://114.55.147.161/'+this+'"/></div>';
+				    	// });
+				    	// $("#share-banner").append(html); 	
+				    	// $(".f-loading").remove();
+				  	},
+				    error:function(){
+				    	// $(".f-loading").remove();
+				     //    alert('无此商家信息');
+				     console.log('error')
+				    }
+				})
+
+              
+            })
+            
 
 
 
