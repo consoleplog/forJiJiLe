@@ -122,12 +122,13 @@ $(document).ready(function(){
 
        $('#huoqu_btn').bind('click',function(){
                 var phoneVal = $('#phoneNum').val();
-                var url ='https://www.1zhuowang.com'+'/api/loginSmsCode'+'?'+'mobile='+phoneVal
+                var url ='https://www.1zhuowang.com/api/loginSmsCode';
                 var args ={"time":new Date()};
                 $.ajax({
 				    url: url,
 				    method: 'post',
 				    dataType: 'jsonp',
+				    data: {mobile:phoneVal},
 				    success: function(data){
 
 				    	console.log(data)
